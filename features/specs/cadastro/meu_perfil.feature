@@ -17,6 +17,6 @@ Funcionalidade: Meu perfil
             | empresa   | cargo      |
             | Google    | Developer  |
             | Microsoft | CTO        |
-            | Facebook  | Estagiário |
+            | Facebook  | Estagiario |
             | Amazon    | CEO        |
             | QA Ninja  | QA         |
