@@ -21,7 +21,7 @@ Funcionalidade: Cadastrar tarefas
         Então devo ver esta tarefa com o status "Em andamento"
 
     @auth @tarefa_dup @logout
-    Cenario: Tarefa com o mesmo título
+    Cenario: Tarefa com o mesmo titulo
 
         Dado que eu tenho uma tarefa com os atributos:
             | titulo | Ler um livro de Go lang |

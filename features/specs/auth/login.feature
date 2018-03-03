@@ -6,7 +6,7 @@ Funcionalidade: Login
     Posso logar no sistema com meus dados de acesso previamente cadastrados
 
     @login @logout @smoke
-    Cenário: Login do usuário
+    Cenário: Login do usuario
 
         Quando faço login com "eu@papito.io" e "123456"
         Então sou autenticado com sucesso

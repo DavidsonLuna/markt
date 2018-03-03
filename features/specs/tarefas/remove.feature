@@ -5,7 +5,7 @@ Funcionalidade: Remover tarefas
     Sendo um usuário que cadastrou uma tarefa indesejada
     Posso solcitar a exclusão de uma tarefa
     
-    Contexto: Solicita exclusão
+    Contexto: Solicita exclusao
         Dado que eu tenho uma tarefa cadastrada
         Quando eu solicito a exclusão desta tarefa
 
@@ -16,7 +16,7 @@ Funcionalidade: Remover tarefas
         Então esta tarefa não deve ser exibida na lista
 
     @auth @desistir @logout
-    Cenario: Desistir da remoção
+    Cenario: Desistir da remocao
 
         Mas eu cancelo a solicitação
         Então esta tarefa permanece cadastrada na lista
