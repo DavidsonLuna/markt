@@ -6,9 +6,9 @@ require 'site_prism'
 require 'faker'
 require 'httparty'
 
-# Capybara.register_driver :selenium do |app|
-#   Capybara::Poltergeist::Driver.new(app, js_errors: false)
-# end
+Capybara.register_driver :selenium do |app|
+  Capybara::Poltergeist::Driver.new(app, js_errors: false)
+end
 
 Capybara.configure do |config|
   config.default_driver = :selenium
