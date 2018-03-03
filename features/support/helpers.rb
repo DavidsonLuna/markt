@@ -28,13 +28,15 @@ class Helpers
     #   @id_para_remover = t['_id'] if t['title'] == titulo
     # end
 
-    @tarefa = @tasks.select { |t| t['title'] == titulo }.first
+    @tarefa = @tasks.select { |t| t['title'] == titulo }
     # puts @tarefa
 
-    HTTParty.delete(
-      'https://marktasks.herokuapp.com/api/tasks/' + @tarefa['_id'],
-      headers: @headers
-    )
+    if @tarefa.size > 0
+      HTTParty.delete(
+        'https://marktasks.herokuapp.com/api/tasks/' + @tarefa.first['_id'],
+        headers: @headers
+      )
+    end
   end
 
   def back_to_the_past(email)
