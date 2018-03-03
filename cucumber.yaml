@@ -1,0 +1,5 @@
+---
+default: --format pretty -p html
+ci: --format progress -p json
+json: --format json --out=logs/features.json
+html: --format html --out=logs/features.html
